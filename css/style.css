@@ -1,0 +1,152 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
+    align-items: center;
+    box-sizing: border-box;
+}
+.header__logo {
+    background: #3d3d4d;
+    font-size: 23px;
+    color: #fff;
+    padding: 8px 18px;
+    margin: 0;
+    display: inline-block;
+
+}
+.header__nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header__nav li {
+    display: inline-block;
+    margin: 20px 10px;
+}
+.header__nav a {
+    color: #3d3d4d;
+    text-decoration: none;
+}
+.mainvisual {
+    width: 100vw;
+    height: 600px;
+}
+.mainvisual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.about {
+    width: 960px;
+    padding: 0 4%;
+    text-align: center;
+    margin: 80px auto;
+    box-sizing: border-box;
+}
+.about__ttl {
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #908e8e;
+    padding-bottom: 3px;
+    margin-bottom: 50px;
+}
+.about__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px;
+}
+.about__content img {
+    border-radius: 50%;
+    width: 20%;
+    min-width: 120px;
+}
+.about__content-txt {
+    width: 60%;
+    text-align: left;
+    font-size: 15px;
+}
+.about__content-txt h3,
+.about__content-txt p {
+    padding: 10px 15px;
+}
+.bicycle {
+    margin: 80px 0;
+}
+.bicycle h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.bicycle__ttl {
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #908e8e;
+    padding-bottom: 3px;
+}
+.bicycle__card {
+    max-width: 960px;
+    padding: 0 4%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+.bicycle__card li {
+    width: 32%;
+    text-align: center;
+}
+.bicycle__card img {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+.bicycle__card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.bicycle__card p {
+    margin-bottom: 15px;
+}
+footer {
+    text-align: center;
+    margin: 30px 0 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        width: 100%;
+        padding: 0 4%;
+    }
+    .about {
+        width: 100%;
+        padding: 0 4%;
+        margin: 40px auto;
+    }
+    .about__content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about__content img {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    .about__content-txt {
+        width: 100%;
+        text-align: left;
+    }
+    .bicycle__card {
+        width: 100%;
+        padding: 0 4%;
+        flex-direction: column;
+    }
+    .bicycle__card li {
+        width: 100%;
+    }
+}
